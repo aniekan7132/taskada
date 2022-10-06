@@ -1,0 +1,140 @@
+:root {
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --color-white: #fff;
+  --color-grey-light-1: #f7f7f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container {
+  width: 50%;
+  margin-top: 3rem;
+}
+
+.form {
+  display: flex;
+}
+
+.form-input {
+  padding: 1rem 4rem;
+  background-color: var(--color-grey-light-1);
+  border: none;
+  border-radius: 0.7rem;
+  width: 80%;
+}
+
+::-webkit-input-placeholder {
+  text-transform: uppercase;
+}
+
+.form-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  background-color: #cf3b3b;
+  color: #fff;
+  padding: 1rem 1rem;
+  margin-left: 2rem;
+  border-radius: 0.7rem;
+  cursor: pointer;
+}
+
+.scroll-container{
+  height: 60vh;
+  //overflow-x: scroll;
+  overflow-y: scroll;
+  margin-top: 3rem;
+  transform: translateX(-1.5rem);
+  padding: 2rem  0;
+}
+.form-task {
+  width: 90%;
+  background-color: #FFFFFF;
+  padding: 0.4rem 0.5rem;
+  margin-top: 2rem;
+  border-radius: 0.7rem;
+  box-shadow: 1px 1px 10px 0 #ccc;
+  margin-left: 3rem;
+}
+
+.form-task p{
+  margin-bottom: 1rem;
+}
+
+.btn-clear {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-clear::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: red;
+  transition: width 0.3s;
+}
+
+.btn-clear:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+.form-task::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: red;
+  transition: width 0.3s;
+}
+
+.form-task:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+.hidden {
+  display: none;
+}
+
+/*.btn-clear:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #019fb6;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out; //ease-in-out
+}
+//.btn-clear:hover:after { transform: scaleX(1); }*/
+
+.task-class {
+  width: 90%;
+  background-color: #FFFFFF;
+  padding: 0.4rem 0.5rem;
+  margin-top: 2rem;
+  border-radius: 0.7rem;
+  box-shadow: 1px 1px 10px 0 #ccc;
+  margin-left: 3rem;
+}
+
+.task-class p{
+  margin-bottom: 1rem;
+}
